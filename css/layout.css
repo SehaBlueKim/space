@@ -118,7 +118,7 @@ h1 a {
   content: "";
   display: block;
   width: 100vw; /* 100%는 #gnb의 100%라서 안됨! */
-  height: 1 px;
+  height: 1px;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 80px;
@@ -134,4 +134,32 @@ header:hover {
   height: 200px;
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid #ddd;
+}
+
+/* 아이콘 */
+.icons {
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.icons > a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+.icons > a:hover {
+  color: var(--default-blk);
+  background-color: var(--sub-color);
+  border-radius: 100%;
+}
+
+.icons > a:last-child {
+  display: none;
 }
